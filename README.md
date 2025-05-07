@@ -1,4 +1,5 @@
 # 🔍 Dota 2 Maphack Bytepatch (macOS)
+<img width="1155" alt="Снимок экрана 2025-05-08 в 00 47 53" src="https://github.com/user-attachments/assets/94d2a647-fe2b-433a-b7eb-4abc05b7cc19" />
 
 This patch forces particle rendering in Dota 2 by modifying the `SetRenderingEnabled` function inside `libparticles.dylib`. It bypasses the `value` argument and always enables rendering.
 
