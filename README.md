@@ -28,18 +28,24 @@ mov     [rbp+var_114], 1    ; ← patched (forces rendering enabled)
   3.	Find the XREF to this string to locate the function.
   4.	Confirm you’re in the correct function by checking the local variable layout:
     	var_128 = qword ptr -128h
+    	
     	var_120 = qword ptr -120h
+    	
     	var_114 = dword ptr -114h
+    	
     	var_110 = qword ptr -110h
+    	
     	var_108 = qword ptr -108h
+    	
     	var_040 = byte  ptr -40h
+    	
     	var_030 = qword ptr -30h
 
-  5.	Look for the instruction:
+  6.	Look for the instruction:
   ```asm
   __text:0000000000062C54                 mov     [rbp+var_114], esi
 ```
-* 062C54 - your offset
+* 62C54 - your offset
 ## 🧩 How To Patch (Cheat Engine / x64dbg)
 
 ✅ Step 1: Locate Base Address
@@ -56,5 +62,5 @@ Final Address = Base Address + 0x62C54
 
  with:
  ```asm
- mov dword ptr [rbp-0x114], 1
+ mov [rbp-0x114], 1
 ```
