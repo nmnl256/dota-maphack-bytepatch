@@ -42,9 +42,9 @@ mov     [rbp+var_114], 1    ; ← patched (forces rendering enabled)
 ## 🧩 How To Patch (Cheat Engine / x64dbg)
 
 ✅ Step 1: Locate Base Address
-	* Attach Cheat Engine to the Dota 2 process.
-	* Open Memory View → View → Memory Regions.
-	* Find the base address of libparticles.dylib (e.g., 0x7FFF20000000).
+* Attach Cheat Engine to the Dota 2 process.
+* Open Memory View → View → Memory Regions.
+* Find the base address of libparticles.dylib (e.g., 0x7FFF20000000).
 
 ✅ Step 2: Compute Target Address
 Final Address = Base Address + 0x62C54
